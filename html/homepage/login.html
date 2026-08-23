@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daphne B. Axalan | Portfolio</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="../../js/login.js"></script>
+    <!--LOGIN FORM-->
+    <div class= "login-container">
+
+        <h1>
+            <br>
+            <p>LOG IN TO ACCESS</p>
+            <br>
+        </h1>
+
+        <div>
+            <img src="../../images/logo250.png" alt="logo" width="250" height="250">
+            <br>
+        </div>    
+        
+        <br>
+
+        <p>You can sign in with:</p>
+        
+        <nav class="logoptions" aria-label for="Sign in with">
+
+            <ul class="logoptions-list">
+                <li>
+
+                    <a href="https://share.google/h3ZsswRveWtxCH4lz" class="logoptions-btn">
+
+                        <img src="../../images/icons8-facebook-circled-48.png" alt="fb" width="48" height="48">
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="https://share.google/8DMPCT0ixw2P4BV4c" class="logoptions-btn">
+
+                        <img src="../../images/icons8-instagram-48.png" alt="ig" width="48" height="48">
+                        
+                    </a>
+                </li>
+                
+                   <li>
+                    <a href="https://share.google/Ds672YkO2xi0dL3NM" class="logoptions-btn">
+
+                        <img src="../../images/icons8-google-logo-48.png" alt="google" width="48" height="48">
+                        
+                    </a>
+
+                </li>
+                
+                 <li>
+                    <a href="https://github.com/login" class="logoptions-btn">
+
+                        <img src="../../images/icons8-github-logo-30.png" alt="github" width="48" height="48">
+                        
+                    </a>
+                </li>
+                                
+            </ul>
+        </nav>
+        <form id="loginform">
+
+            <div class="input-container">
+
+                <label for="username">Enter Username:</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+
+            </div>
+
+            <div class="input-container">
+
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+            </div>
+
+            <p id="errorMessage" class="error-message" role="alert" aria-live="polite"></p>
+
+            <button type="submit">Login</button>
+
+        </form>        
+
+    </div>
+
+</body>
+</html>
