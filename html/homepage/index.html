@@ -30,7 +30,9 @@
             </div>
 
             <nav class="seperator" aria-label="Main navigation">
+
                 <!-- Theme switcher now at top of navigation -->
+
                 <div class="theme-switcher" aria-label="Portfolio color themes">
                     <button class="theme-btn active" type="button" data-theme="ocean" aria-label="Ocean theme">
                         <img src="../../images/blue.png" alt="blue" width="20" height="20">
@@ -70,6 +72,11 @@
                         <img src="../../images/communicate.png" alt="contacts" width="25" height="25">
                         <span>CONTACTS</span>
                     </a>
+
+                    <a href="login.html" class="seperate">
+                        <img src="../../images/logout.png" alt="logout" width="25" height="25">
+                        <span>LOGOUT</span>
+                    </a>
                 </div>
             </nav>
 
@@ -91,8 +98,32 @@
                 <img src="../../images/earthpic.jpg" alt="earthpic" width="500" height="700">
             </div>
 
+            <!-- QUOTE BELOW PROFILE -->
+            <p class="hero-quote">&ldquo;To be cringe is to be free&rdquo;</p>
+
+            <!-- STATISTICS -->
+            <div class="statistics">
+                <div class="stat-box">
+                    <span class="stat-num">21</span>
+                    <span class="stat-label">AGE</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">10</span>
+                    <span class="stat-label">SKILLS</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">3</span>
+                    <span class="stat-label">PROJECTS</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num" id="stat-achievements">0</span>
+                    <span class="stat-label">ACHIEVEMENTS</span>
+                </div>
+            </div>
+
             <!-- RIGHT: BACKGROUND TEXT -->
             <div class="background">
+                <h2 class="about-me-title">About Me</h2>
                 <p>
                     I am Daphne B. Axalan, 21 years old. I am currently living in Inayagan, City of
                     Naga, Cebu. I belong in a family of five and I am the second child of my parents.
@@ -140,130 +171,155 @@
             <div class="about-card" id="facts">
                 <h2>FUN FACTS</h2>
 
-                <ul>
-                    <li>
-                        <p>I became sleepy if my surroundings are noisy.</p>
-                    </li>
-                    <li>
-                        <p>I love combining foods that I think will taste great.</p>
-                    </li>
-                    <li>
-                        <p>I am a night owl and an early bird.</p>
-                    </li>
-                    <li>
-                        <p>I eat a lot yet I am a body conscious type of person.</p>
-                    </li>
-                    <li>
-                        <p>I have a small face and an inverted triangle body type. Others say it is weird.</p>
-                    </li>
-                    <li>
-                        <p>I imagine and overthink a lot.</p>
-                    </li>
-                    <li>
-                        <p>When I read, my brain plays the texts or images as a movie in my head</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="about-card" id="skills">
-                <h2>SKILLS</h2>
-
-                <ul>
-                    <li>
-                        <p>Empathetic</p>
-                    </li>
-                    <li>
-                        <p>Patience</p>
-                    </li>
-                    <li>
-                        <p>Understanding</p>
-                    </li>
-                    <li>
-                        <p>Dedicated</p>
-                    </li>
-                    <li>
-                        <p>Can work under pressure.</p>
-                    </li>
-                    <li>
-                        <p>I can see the flow of a system in my head</p>
-                    </li>
-                    <li>
-                        <p>I can imagine the structure of a system</p>
-                    </li>
-                </ul>
+                <div class="card-slider" data-slider>
+                    <ul class="slider-items">
+                        <li class="slider-item active"><p>I became sleepy if my surroundings are noisy.</p></li>
+                        <li class="slider-item"><p>I love combining foods that I think will taste great.</p></li>
+                        <li class="slider-item"><p>I am a night owl and an early bird.</p></li>
+                        <li class="slider-item"><p>I eat a lot yet I am a body conscious type of person.</p></li>
+                        <li class="slider-item"><p>I have a small face and an inverted triangle body type. Others say it is weird.</p></li>
+                        <li class="slider-item"><p>I imagine and overthink a lot.</p></li>
+                        <li class="slider-item"><p>When I read, my brain plays the texts or images as a movie in my head</p></li>
+                        <li class="slider-item"><p>Socially awkward in new situations.</p></li>
+                        <li class="slider-item"><p>I get easily distracted when someone is looking at me while I am working with something.</p></li>
+                        <li class="slider-item"><p>I got nervous easily yet I look calm.</p></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="about-card" id="favorites">
                 <h2>FAVORITES</h2>
 
-                <ul class="favorites-list">
-                    <li>
-                        <p>Cats</p>
-                        <p>Ever since I was a child I have loved cats. Now I have four cats at home.</p>
+                <div class="card-slider" data-slider>
+                    <ul class="slider-items">
+                        <li class="slider-item active">
+                            <p class="slider-title">Cats</p>
+                            <p class="slider-desc">Ever since I was a child I have loved cats. Now I have four cats at home.</p>
+                        </li>
+                        <li class="slider-item">
+                            <p class="slider-title">Foods</p>
+                            <p class="slider-desc">My favs are Carbonara, takoyaki, Onigiri, fruits except strawberries, and leafy vegetables.</p>
+                        </li>
+                        <li class="slider-item">
+                            <p class="slider-title">Manwhas</p>
+                            <p class="slider-desc">I Shall Master This Family, A Secretly Capable Child is Looking for Her Dad, The Male Leads are Trapped in my House, and Charlotte and Her 5 Disciples are my top 4 manwhas.</p>
+                        </li>
+                        <li class="slider-item">
+                            <p class="slider-title">Novels</p>
+                            <p class="slider-desc">Reincarnated as a stupid Daughter of a Mafia Boss by DemLux_Pain.</p>
+                        </li>
+                        <li class="slider-item">
+                            <p class="slider-title">Animes</p>
+                            <p class="slider-desc">Dr. Stone, Demon Slayer and Haikyuu are my top 3 animes.</p>
+                        </li>
+                        <li class="slider-item">
+                            <p class="slider-title">Movies</p>
+                            <p class="slider-desc">As of now, I am hook with horror movies and horror/comedy movies.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-card" id="skills">
+                <h2>SKILLS</h2>
+
+                <ul class="bar-list">
+                    <li class="bar-row">
+                        <span class="bar-name">Empathetic</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 95%"></span></span>
+                        <span class="bar-pct">95%</span>
                     </li>
-                    <li>
-                        <p>Foods</p>
-                        <p>My favs are Carbonara, takoyaki, Onigiri, fruits except strawberries, and
-                            leafy vegetables.</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Patience</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 85%"></span></span>
+                        <span class="bar-pct">85%</span>
                     </li>
-                    <li>
-                        <p>Manwhas</p>
-                        <p>I Shall Master This Family, A Secretly Capable Child is Looking for Her Dad,
-                            The Male Leads are Trapped in my House, and Charlotte and Her 5 Disciples
-                            are my top 4 manwhas.
-                        </p>
+                    <li class="bar-row">
+                        <span class="bar-name">Understanding</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 90%"></span></span>
+                        <span class="bar-pct">90%</span>
                     </li>
-                    <li>
-                        <p>Novels</p>
-                        <p>Reincarnated as a stupid Daughter of a Mafia Boss by DemLux_Pain.</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Dedicated</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 93%"></span></span>
+                        <span class="bar-pct">93%</span>
                     </li>
-                    <li>
-                        <p>Animes</p>
-                        <p>Dr. Stone, Demon Slayer and Haikyuu are my top 3 animes.</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Can work under pressure</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 86%"></span></span>
+                        <span class="bar-pct">86%</span>
                     </li>
-                    <li>
-                        <p>Movies</p>
-                        <p>As of now, I am hook with horror movies and horror/comedy movies.</p>
+                    <li class="bar-row">
+                        <span class="bar-name">I can see the flow of a system in my head</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 85%"></span></span>
+                        <span class="bar-pct">85%</span>
                     </li>
+                    <li class="bar-row">
+                        <span class="bar-name">I can imagine the structure of a system</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 80%"></span></span>
+                        <span class="bar-pct">80%</span>
+                    </li>
+                         <li class="bar-row">
+                        <span class="bar-name">Attention to details</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 85%"></span></span>
+                        <span class="bar-pct">85%</span>
+                    </li>
+                    <li class="bar-row">
+                        <span class="bar-name">Emphatic Tuning</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 76%"></span></span>
+                        <span class="bar-pct">76%</span>
+                    </li>
+                    <li class="bar-row">
+                        <span class="bar-name">Self Motivation</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 100%"></span></span>
+                        <span class="bar-pct">100%</span>
+                    </li>                                       
                 </ul>
             </div>
 
             <div class="about-card" id="talents">
                 <h2>TALENTS</h2>
-                <ul>
-
-                    <li>
-                        <p>Dancing</p>
+                <ul class="bar-list">
+                    <li class="bar-row">
+                        <span class="bar-name">Dancing</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 90%"></span></span>
+                        <span class="bar-pct">90%</span>
                     </li>
-
-                    <li>
-                        <p>Know how to walk in a pageant</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Know how to walk in a pageant</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 85%"></span></span>
+                        <span class="bar-pct">85%</span>
                     </li>
-
-                    <li>
-                        <p>Creative Writing(Poem)</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Creative Writing (Poem)</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 92%"></span></span>
+                        <span class="bar-pct">92%</span>
                     </li>
-
-                    <li>
-                        <p>Baton Twirling</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Baton Twirling</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 80%"></span></span>
+                        <span class="bar-pct">80%</span>
                     </li>
-
-                    <li>
-                        <p>High pain tolerance (I can handle the pain of alcohol)</p>
+                    <li class="bar-row">
+                        <span class="bar-name">High pain tolerance (I can handle the pain of alcohol)</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 95%"></span></span>
+                        <span class="bar-pct">95%</span>
                     </li>
-
-                    <li>
-                        <p>Can pretend I did not notice someone was actually looking at me</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Can pretend I did not notice someone was actually looking at me</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 75%"></span></span>
+                        <span class="bar-pct">75%</span>
                     </li>
-
-                    <li>
-                        <p>Reading fast</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Reading fast</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 88%"></span></span>
+                        <span class="bar-pct">88%</span>
                     </li>
-
-                    <li>
-                        <p>Braiding</p>
+                    <li class="bar-row">
+                        <span class="bar-name">Braiding</span>
+                        <span class="bar-track"><span class="bar-fill" style="--pct: 82%"></span></span>
+                        <span class="bar-pct">82%</span>
                     </li>
-
                 </ul>
             </div>
 
@@ -274,38 +330,41 @@
 
                 <h2>PROJECTS</h2>
 
-                <p class="project-category">SOLO PROJECTS</p>
+                <ul class="project-cards">
 
-                <ul class="solo-list">
-
-                    <li>
-                        <a href="https://github.com/daphaxalan2025/film.git"
-                        class="project-btn"
-                        target="_blank">
-                            <span>Project 1: Movie Ticketing Website</span>
-                        </a>
+                    <li class="project-card">
+                        <span class="project-tag">SOLO</span>
+                        <h3>Movie Ticketing Website</h3>
+                        <p>Complete movie ticketing system with seat selection and payment integration.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <a href="https://github.com/daphaxalan2025/film.git" class="project-link" target="_blank">View Project &rarr;</a>
                     </li>
 
-                    <li>
-                        <a href="https://github.com/daphaxalan2025/Dalhia-s_Final_System.git"
-                        class="project-btn"
-                        target="_blank">
-                            <span>Project 2: Dalhia's Final Home Covered Court Booking and Violation Report System</span>
-                        </a>
+                    <li class="project-card">
+                        <span class="project-tag">SOLO</span>
+                        <h3>Court Booking System</h3>
+                        <p>Dalhia's Final Home Covered Court Booking and Violation Report System.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/daphaxalan2025/Dalhia-s_Final_System.git" class="project-link" target="_blank">View Project &rarr;</a>
                     </li>
 
-                </ul>
-
-                <p class="project-category">GROUP PROJECTS</p>
-
-                <ul class="group-list">
-
-                    <li>
-                        <a href="https://github.com/daphaxalan2025/cinephp.git"
-                        class="project-btn"
-                        target="_blank">
-                            <span>Project 1: Cinewatch: An Online Movie Renting and Ticketing System</span>
-                        </a>
+                    <li class="project-card">
+                        <span class="project-tag">GROUP</span>
+                        <h3>Cinewatch</h3>
+                        <p>Online movie renting and ticketing system with a team of 4 developers.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/daphaxalan2025/cinephp.git" class="project-link" target="_blank">View Project &rarr;</a>
                     </li>
 
                 </ul>
@@ -342,6 +401,12 @@
 
                 <li>
                     <p>Playing with cats</p>
+                </li>
+                <li>
+                    <p>Listening to Music</p>
+                </li>
+                <li>
+                    <p>Dancing</p>
                 </li>
 
             </ul>
@@ -419,11 +484,18 @@
         <!-- CONTACTS -->
         <section class="content-section contacts" id="contacts">
 
-            <h2>CONTACTS & SOCIALS</h2>
+            <div class="contacts-header">
+                <h2>CONTACTS &amp; SOCIALS</h2>
+                <a class="connect-pill" href="mailto:axalan.daphne.b@gmail.com">CONNECT</a>
+            </div>
 
-            <nav class="contact">
+            <div class="contact-layout">
 
-                <ul class="contacts-list" aria-label="Contact information">
+                <div class="contact-left">
+
+                    <p class="contact-prompt">Connect with me</p>
+
+                    <ul class="contacts-list" aria-label="Contact information">
 
                     <li>
                         <p>GMAIL:</p>
@@ -465,18 +537,17 @@
                         </a>
                     </li>
 
-                </ul>
+                    </ul>
 
-            </nav>
+                </div>
 
-            <br>
+                <div class="contact-right">
 
-            <!-- MESSAGE -->
-            <p>Got any messages for me? Please feel free to reach out!</p>
+                    <p class="contact-prompt">Send me a message</p>
 
-            <br>
+                    <p class="contact-note">Got any messages for me? Please feel free to reach out!</p>
 
-            <form class="contact-form">
+                    <form class="contact-form">
 
                 <div class="form-group">
                     <label for="contact-name">
@@ -525,7 +596,11 @@
                     SEND MESSAGE
                 </button>
 
-            </form>
+                    </form>
+
+                </div>
+
+            </div>
 
         </section>
 

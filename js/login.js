@@ -1,13 +1,11 @@
 /* =========================================================
-   DAPHNE B. AXALAN — LOGIN SCRIPT
-   ---------------------------------------------------------
-   Correct credentials (Daphne / 12345) -> index.html
-   Wrong credentials              -> error notification
+   LOGIN SCRIPT
+   Credentials: Daphne / 12345
    ========================================================= */
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
 
-    // login page matches the portfolio
+    // Apply saved theme to login page
     const savedTheme = localStorage.getItem('portfolio-theme');
     if (savedTheme) {
         document.body.setAttribute('data-theme', savedTheme);
@@ -23,37 +21,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const CORRECT_USERNAME = 'Daphne';
     const CORRECT_PASSWORD = '12345';
 
-    // show a styled notification pill (red = error, green = success)
     function notify(message, type) {
         errorMessage.textContent = message;
         errorMessage.classList.remove('error', 'success');
-        void errorMessage.offsetWidth; // restart any CSS animation
+        void errorMessage.offsetWidth;
         errorMessage.classList.add('show', type);
     }
 
-    loginForm.addEventListener('submit', function (event) {
+    loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
         const username = usernameInput.value.trim();
         const password = passwordInput.value.trim();
 
         if (username === CORRECT_USERNAME && password === CORRECT_PASSWORD) {
-            // mark this browser session as logged in, then enter the portfolio
             sessionStorage.setItem('daphne_logged_in', 'yes');
+            notify('Login successful! Redirecting...', 'success');
 
-            notify('✅ Login successful! Redirecting...', 'success');
-
-            setTimeout(function () {
+            setTimeout(function() {
                 window.location.href = 'index.html';
             }, 900);
-
         } else {
-            notify('❌ Incorrect username or password. Please try again.', 'error');
-
-            // clear the password so the visitor can retry
+            notify('Incorrect username or password. Please try again.', 'error');
             passwordInput.value = '';
             passwordInput.focus();
         }
     });
-
 });
