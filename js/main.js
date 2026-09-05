@@ -1,9 +1,3 @@
-/* =========================================================
-   DAPHNE B. AXALAN — MAIN SCRIPT
-   Auth gate · theme switcher · background particles ·
-   logout · gallery · scroll reveal · scrollspy · dividers
-   ========================================================= */
-
 /* ---------- AUTH GATE ---------- */
 (function() {
     if (sessionStorage.getItem('daphne_logged_in') !== 'yes') {
